@@ -8,5 +8,6 @@
 * [Ⅱ、Spring Cloud Config](spring-cloud-config.md)
   * [4、Quick Start](spring-cloud-config/4quick-start.md)
     * [4.1、Client Side Usage](spring-cloud-config/4quick-start/41client-side-usage.md)
+  * [5、Spring Cloud Config Server](spring-cloud-config/5spring-cloud-config-server.md)
 * [Ⅲ、Spring Cloud Netflix](spring-cloud-netflix.md)
 
