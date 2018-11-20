@@ -24,7 +24,7 @@ spring.cloud.config.server.git.uri: file://${user.home}/config-repo
 其中$ {user.home} / config-repo是一个包含YAML和属性文件的git存储库。
 
 > 在Windows上，如果文件URL是绝对的驱动器前缀，则需要额外的“/”（例如，file：/// $ {user.home} / config-repo）。
-
+>
 > 以下清单显示了在前面的示例中创建git存储库的方法：
 >
 > ```
@@ -36,6 +36,10 @@ spring.cloud.config.server.git.uri: file://${user.home}/config-repo
 > $ git add -A .
 > $ git commit -m "Add application.properties"
 > ```
+
+> 使用git存储库的本地文件系统仅用于测试。 您应该使用服务器在生产中托管配置存储库。
+
+> 如果只保留文本文件，则配置存储库的初始克隆可以快速有效。如果存储二进制文件（尤其是大型文件），则第一次配置请求或服务器中遇到内存不足错误时可能会出现延迟。
 
 
 
