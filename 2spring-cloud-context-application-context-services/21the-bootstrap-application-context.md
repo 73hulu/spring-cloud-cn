@@ -1,0 +1,2 @@
+Spring Cloud应用程序通过创建“bootstrap”上下文来运行，该上下文是主应用程序的父上下文。它负责从外部源加载配置属性以及解密本地外部配置文件中的属性。这两个上下文共享一个`Environment`，它是任何Spring应用程序的外部属性的来源。默认情况下，引导属性bootstrap properties（不是bootstrap.properties，而是在引导阶段加载的属性）以高优先级添加，因此本地配置无法覆盖它们。
+
